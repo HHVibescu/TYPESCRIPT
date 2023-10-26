@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Contacts</title>
+</head>
+<body>
+    <form id="contactForm">
+        <input type="text" id="nom" placeholder="Nom" required>
+        <input type="text" id="prenom" placeholder="Prénom" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="telephone" placeholder="Numéro de téléphone" required>
+        <input type="submit" value="Ajouter">
+    </form>
+
+    <select id="triOption">
+        <option value="id">ID</option>
+        <option value="nom">Nom</option>
+        <option value="prenom">Prénom</option>
+        <!-- Bonus: Ajoutez un champ pour l'âge si nécessaire -->
+    </select>
+
+    <button onclick="triContacts()">Trier</button>
+
+    <div id="nombreContacts">Nombre de contacts: 0</div>
+
+    <ul id="listeContacts"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
